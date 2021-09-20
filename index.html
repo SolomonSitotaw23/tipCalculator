@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    Tip calculator
+    <div class="container">
+      <div class="calculate">
+        <p>Bill</p>
+
+        <input class="fullti amount" type="number" placeholder="0" id="bill" />
+        <p>Select Tip %</p>
+
+        <div class="tips">
+          <button id="b5">5%</button>
+          <button id="b10">10%</button>
+          <button id="b15">15%</button>
+          <button id="b25">25%</button>
+          <button id="b50">50%</button>
+          <input
+            id="custom"
+            class="custom"
+            placeholder="custom"
+            type="number"
+          />
+        </div>
+
+        <p>Number of People</p>
+        <input
+          class="person fullti"
+          type="number"
+          placeholder="1"
+          id="totalPersons"
+          value=""
+        />
+      </div>
+
+      <div class="result">
+        <div class="amountdiv">
+          <div>
+            <p style="color: aliceblue">Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <div>
+            <p style="font-size: 32px; color: #1ac4ae" id="tipamount">$0.00</p>
+          </div>
+        </div>
+
+        <div class="amountdiv">
+          <div>
+            <p style="color: aliceblue">Total</p>
+            <p>/ person</p>
+          </div>
+          <div>
+            <p style="font-size: 32px; color: #1ac4ae" id="totalpperson">
+              $0.00
+            </p>
+          </div>
+        </div>
+
+        <div><button class="reset" id="reset">Reset</button></div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

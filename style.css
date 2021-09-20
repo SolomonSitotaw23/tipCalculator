@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Space Mono", monospace;
+  text-align: center;
+  font-size: 15px;
+  color: hsl(186, 14%, 43%);
+  font-weight: bold;
+  background-color: #c5e4e7;
+}
+.container {
+  background-color: #fff;
+  width: 750px;
+  height: 375px;
+  text-align: left;
+  padding: 40px;
+  border-radius: 20px;
+  justify-content: space-around;
+  /* centering  */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  /* flex-direction: column; */
+}
+.calculate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  justify-content: space-between;
+  /* align-items: center; */
+  background-color: #00474b;
+  border-radius: 20px;
+  padding: inherit;
+  text-align: left;
+}
+
+.tips {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+button {
+  height: 40px;
+  width: 100px;
+  font-family: "Space Mono", monospace;
+  background: none;
+  border: none;
+  background-color: #00474b;
+  color: #fff;
+  font-weight: bold;
+  font-size: 19px;
+  border-radius: 10px;
+}
+.custom {
+  text-align: center;
+  font-weight: bold;
+  font-size: 19px;
+  background: none;
+  border: none;
+  width: 80px;
+  font-family: "Space Mono", monospace;
+}
+.fullti {
+  width: 95%;
+  height: 50px;
+  background: none;
+  border: none;
+  font-family: "Space Mono", monospace;
+  font-size: 19px;
+  text-align: right;
+  font-weight: bold;
+  color: #00474b;
+}
+.custom,
+.fullti {
+  background-color: #e3edf3;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.custom:focus,
+.fullti:focus {
+  outline: none;
+}
+.add {
+  color: hsl(186, 14%, 43%);
+  color: hsl(183, 100%, 15%);
+}
+.amount {
+  background-image: url(./images/icon-dollar.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+.person {
+  background-image: url(./images/icon-person.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+.reset {
+  background-color: #1ac4ae;
+  color: #00474b;
+  width: 300px;
+}
+.amountdiv {
+  display: flex;
+  justify-content: space-between;
+}
+t .tipamount p {
+  color: #fff;
+  font-size: 32px;
+}
+button:hover {
+  opacity: 80%;
+}
+button:active {
+ 
+}
